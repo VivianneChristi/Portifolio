@@ -18,6 +18,7 @@ coloque nas sessões indicadas*/
      margin: 0;
      padding: 0;
      line-height: 1;
+     overflow-x: hidden;
  }
 
  ol,
@@ -475,42 +476,401 @@ coloque nas sessões indicadas*/
  /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
 
- /*Tablet*/
- @media (min-width: 768px) {
+ /* Tablet */
+ @media (min-width: 768px) and (max-width: 1024px) {
 
      /* Menu */
+     .menu {
+         width: 100%;
+         height: 25px;
+         padding: 0 32px;
+         box-sizing: border-box;
+     }
 
-     /*title*/
+     .menu__list {
+         display: none;
+         /* Oculta todos os itens do menu */
+     }
 
-     /*Skills*/
+     .menu__item--contato {
+         display: block;
+         /* Exibe apenas o item de contato */
+         margin-left: 36px;
+         /* Ajusta a distância do logotipo */
+     }
 
-     /*Hobbies*/
+     /* Imagem na área de tablet */
+     .title__profile {
+         width: 146px;
+         height: 146px;
+         /* Ajusta a posição vertical */
+     }
 
-     /*Experiências acadêmicas*/
+     /* Textos na área de tablet */
+     .title__div {
+         width: 594px;
+         height: 130px;
+         margin-right: 8px;
+     }
 
-     /*Expeirência profissional*/
+     .title__bio {
+         font-size: 22px;
+         /* Ajusta o tamanho da fonte */
+     }
+
+     .title__subsection {
+         font-size: 14px;
+         /* Ajusta o tamanho da fonte */
+     }
+
+     .about-background {
+         width: 100%;
+         height: 268px;
+     }
+
+     .about__container {
+         width: 704px;
+         height: 222px;
+         display: flex;
+         align-items: flex-start;
+         justify-content: flex-start;
+         flex-direction: column;
+
+     }
+
+     .about__title {
+         font-size: 22px;
+     }
+
+     .about__paragraph {
+         width: 704px;
+         height: 112px;
+         font-size: 14px;
+     }
+
+
+     .skills,
+     .hobbies {
+         width: 768px;
+         height: 200px;
+         margin: 32px 32px 32px 32px;
+
+     }
+
+     .skills__title,
+     .hobbies__title {
+         font-size: 22px;
+     }
+
+     .skills__line,
+     .hobbies__line {
+         display: flex;
+         width: 704px;
+         height: 118px;
+     }
+
+     .skills__box,
+     .hobbies__box {
+         width: 224px;
+         height: 118px;
+     }
+
+     .academic {
+         width: 100%;
+         height: 500px;
+         display: flex;
+         margin-bottom: 90px;
+     }
+
+     .academic__title {
+         text-align: center;
+         font-size: 22px;
+     }
+
+     .academic__courses {
+         display: flex;
+         margin-right: 65px;
+     }
+
+     .academic__courses__box {
+         width: 224px;
+         height: 129px;
+     }
+
+     .academic__courses__item__img {
+         width: 224px;
+         height: 118px;
+     }
+
+     .academic__courses__item__title {
+         font-size: 16px;
+     }
+
+     .academic__courses__item__subtitle {
+         font-size: 14px;
+         margin-bottom: 32px;
+     }
+
+     .experience {
+         width: 100%;
+         height: auto
+     }
+
+     .experience__section__title {
+         font-size: 22px;
+         margin-top: 10px;
+     }
+
+     .experiencie__box,
+     .experience__box--right {
+         width: 100%;
+         height: auto;
+         display: flex;
+         align-items: flex-start;
+         justify-content: flex-start;
+         flex-direction: column;
+         margin-bottom: 80px;
+
+     }
+
+     .experience__img {
+         width: 704px;
+         /* Largura da imagem */
+         height: 302px;
+         /* Altura da imagem */
+         align-self: center;
+         /* Alinhar a imagem ao centro verticalmente */
+     }
+
+     .experience__info {
+         width: 704px;
+         /* Largura do container de informações */
+         height: 91px;
+         /* Altura do container de informações */
+         align-self: flex-start;
+         margin-left: 40px;
+     }
+
+     .experience__title {
+         font-size: 16px;
+         /* Tamanho da fonte do título */
+     }
+
+     .experience__text {
+         font-size: 14px;
+         /* Tamanho da fonte do texto */
+     }
+
+     .experience__description,
+     .experience__description_right {
+         width: 704px;
+         /* Largura do container de descrição */
+         height: 91px;
+         /* Altura do container de descrição */
+         display: flex;
+         align-items: center;
+         /* Alinhado ao centro verticalmente */
+     }
+
+     .experience__repo,
+     .experience__demo {
+         width: 108px;
+         /* Largura dos botões */
+         height: 40px;
+         /* Altura dos botões */
+         margin-right: 20px;
+     }
+
+     .experiencia__botao--demo {
+         width: 90px;
+         /* Largura do botão Ver Demo */
+     }
+
 
  }
 
- /*Mobile*/
- @media (min-width: 425px) {
+ /* Mobile */
+ @media (min-width: 220px) and (max-width: 430px) {
 
-     /*Menu*/
+     /* Menu */
+     .menu {
+         width: 100%;
+         height: 25px;
+         padding: 0 32px;
+         box-sizing: border-box;
+     }
 
-     /*Titulo*/
+     .menu__list {
+         display: none;
+         /* Oculta todos os itens do menu */
+     }
 
-     /*Sessão sobre*/
+     .menu__item--contato {
+         display: block;
+         /* Exibe apenas o item de contato */
+         margin-left: 36px;
+         /* Ajusta a distância do logotipo */
+     }
 
-     /*Skills*/
 
-     /*Hobbies*/
+     .title {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 360px;
+         height: 294px;
+     }
 
-     /*Formação Acadêmica*/
+     /* Imagem na área de celular */
+     .title__profile {
+         order: -1;
+         align-self: flex-start;
+         margin-bottom: 16px;
+         width: 98px;
+         height: 98px;
+         margin-left: 16px;
+     }
 
-     /*Experiência Profissional*/
+     /* Textos na área de celular */
+     .title__div {
+         width: 328px;
+         height: 128px;
+         margin-bottom: 16px;
+     }
 
-     /*Contato*/
+     .title__bio {
+         font-size: 22px;
 
-     /*Footer*/
+     }
+
+     .title__subsection {
+         font-size: 14px;
+     }
+
+     .about-background {
+         width: 100%;
+         height: 350px;
+     }
+
+     .about__container {
+         width: 328px;
+         height: 318px;
+         width: 704px;
+         height: 222px;
+         display: flex;
+         align-items: flex-start;
+         justify-content: flex-start;
+         flex-direction: column;
+
+     }
+
+     .about__title {
+         font-size: 22px;
+     }
+
+     .about__paragraph {
+         width: 328px;
+         height: 208px;
+         font-size: 14px;
+     }
+
+     .skills {
+         width: 360px;
+         height: auto;
+         /* Mudei de 508px para auto para que a altura seja ajustada conforme o conteúdo */
+         margin: 32px;
+         /* Simplifiquei a margem para aplicar a mesma em todos os lados */
+
+     }
+
+     .skills__title {
+         font-size: 22px;
+     }
+
+     .skills__line {
+         display: flex;
+         flex-wrap: wrap;
+         /* Permitirá que os boxes quebrem para a próxima linha */
+         justify-content: space-between;
+         /* Distribuirá os boxes igualmente ao longo do contêiner */
+         width: 100%;
+         /* Defini a largura como 100% para ocupar toda a largura do container pai */
+     }
+
+
+     .hobbies {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         width: 360px;
+         height: auto;
+         /* Ajustei para que a altura seja ajustada conforme o conteúdo */
+         margin: 32px;
+         /* Simplifiquei a margem para aplicar a mesma em todos os lados */
+     }
+
+     .hobbies__title {
+         font-size: 22px;
+     }
+
+     .hobbies__line {
+         display: flex;
+         flex-wrap: wrap;
+         /* Permitirá que os boxes quebrem para a próxima linha */
+         justify-content: space-between;
+         /* Distribuirá os boxes igualmente ao longo do contêiner */
+         width: 100%;
+         /* Defini a largura como 100% para ocupar toda a largura do container pai */
+     }
+
+     .skills__box,
+     .hobbies__box {
+         width: calc(50% - 16px);
+         /* Defini a largura dos boxes para ocupar 50% do contêiner, com espaço entre eles */
+         height: 118px;
+         margin-bottom: 16px;
+         /* Adicionei espaço entre as linhas de boxes */
+         flex-grow: 1;
+         /* Permitirá que a última caixa ocupe todo o espaço disponível, caso seja a única */
+     }
+
+     .skills__box:nth-last-child(1):nth-child(odd),
+     .hobbies__box:nth-last-child(1):nth-child(odd) {
+         width: 100%;
+         /* Define a largura da última caixa para ocupar toda a largura do contêiner */
+     }
+
+
+     .academic {
+         width: 100%;
+         height: 300px;
+         display: flex;
+         margin: 0 auto;
+     }
+
+     .academic__title {
+         text-align: center;
+         font-size: 22px;
+     }
+
+
+     .academic__courses__box {
+         width: 296px;
+         height: 169px;
+     }
+
+     .academic__courses__item__img {
+         width: 296px;
+         height: 118px;
+     }
+
+     .academic__courses__item__title {
+         font-size: 16px;
+     }
+
+     .academic__courses__item__subtitle {
+         font-size: 14px;
+     }
+
 
  }
