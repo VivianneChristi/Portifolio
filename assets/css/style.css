@@ -687,6 +687,67 @@ utilize como referência os breakpoints @media abaixo*/
      }
 
 
+     .formcontato {
+         width: 100%;
+         height: 573px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+     }
+
+     .formcontato--esquerda {
+         display: none;
+     }
+
+     .formcontato__text {
+         width: 656px;
+         height: 38;
+     }
+
+     .formcontato__title {
+         font-size: 22px;
+     }
+
+     .formcontato__subtext {
+         font-size: 16px;
+     }
+
+     .formcontato__form {
+         width: 704px;
+         height: 397px;
+     }
+
+     .formcontato__input {
+         border: none;
+         height: 56px;
+     }
+
+     .formcontato__textarea {
+         border: none;
+         height: 133px;
+         margin-bottom: 32px;
+     }
+
+     .formcontato__botao {
+         width: 151px;
+         height: 40px;
+         margin-left: 5px;
+     }
+
+     .footer {
+         width: 768px;
+         height: 102px;
+         display: flex;
+         align-items: flex-start;
+         justify-content: center;
+     }
+
+     .footer__rodape {
+         width: 234px;
+         height: 38px;
+         font-size: 16px;
+     }
  }
 
  /* Mobile */
@@ -870,6 +931,158 @@ utilize como referência os breakpoints @media abaixo*/
 
      .academic__courses__item__subtitle {
          font-size: 14px;
+     }
+
+
+     .experience {
+         width: 100%;
+         height: auto
+     }
+
+     .experience__section__title {
+         font-size: 22px;
+         margin-top: 10px;
+     }
+
+     .experiencie__box,
+     .experience__box--right {
+         width: 100%;
+         height: auto;
+         display: flex;
+         align-items: flex-start;
+         justify-content: flex-start;
+         flex-direction: column;
+         margin-bottom: 80px;
+
+     }
+
+     .experience__img {
+         width: 100px;
+         /* Largura da imagem */
+         height: 144px;
+         /* Altura da imagem */
+         align-self: center;
+         /* Alinhar a imagem ao centro verticalmente */
+     }
+
+     .experience__info {
+         width: 251px;
+         /* Largura do container de informações */
+         height: 91px;
+         /* Altura do container de informações */
+         align-self: flex-start;
+         margin-left: 40px;
+     }
+
+     .experience__title {
+         font-size: 16px;
+         /* Tamanho da fonte do título */
+     }
+
+     .experience__text {
+         font-size: 14px;
+         /* Tamanho da fonte do texto */
+     }
+
+     .experience__description,
+     .experience__description_right {
+         width: 251px;
+         /* Largura do container de descrição */
+         height: 91px;
+         /* Altura do container de descrição */
+         display: flex;
+         align-items: center;
+         /* Alinhado ao centro verticalmente */
+     }
+
+     .experience__repo,
+     .experience__demo {
+         width: 108px;
+         /* Largura dos botões */
+         height: 40px;
+         /* Altura dos botões */
+         margin-right: 20px;
+     }
+
+     .experiencia__botao--demo {
+         width: 96px;
+         /* Largura do botão Ver Demo */
+     }
+
+
+     .formcontato {
+         width: 100%;
+         height: 675px;
+         display: flex;
+         align-items: flex-start;
+         /* Alinhar no topo da div */
+         justify-content: center;
+         position: relative;
+         /* Para posicionar o topo */
+     }
+
+     .formcontato--esquerda {
+         display: none;
+     }
+
+     .formcontato__topo {
+         width: 100%;
+         height: 32px;
+         /* Definir altura do topo */
+         position: absolute;
+         /* Posicionamento absoluto */
+         top: 0;
+         /* Alinhar no topo */
+     }
+
+     .formcontato__text {
+         width: 296px;
+         height: 118px;
+     }
+
+     .formcontato__title {
+         font-size: 22px;
+     }
+
+     .formcontato__subtext {
+         font-size: 16px;
+     }
+
+     .formcontato__form {
+         width: 296px;
+         height: 397px;
+     }
+
+     .formcontato__input {
+         border: none;
+         width: 296px;
+         height: 56px;
+     }
+
+     .formcontato__textarea {
+         border: none;
+         height: 133px;
+         width: 296px;
+         margin-bottom: 32px;
+     }
+
+     .formcontato__botao {
+         width: 151px;
+         height: 40px;
+     }
+
+     .footer {
+         width: 360px;
+         height: 84;
+         display: flex;
+         align-items: flex-start;
+         justify-content: center;
+     }
+
+     .footer__rodape {
+         width: 234px;
+         height: 38px;
+         font-size: 16px;
      }
 
 
